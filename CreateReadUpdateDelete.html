@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CRUD Bottstrap</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+
+<h1 class="text-center">Create Read Update Delete</h1>
+
+<!-- Awal card form -->
+<div class="card mt-4">
+    <div class="card-header bg-primary">
+      Data Mahasiswa
+    </div>
+    <div class="card-body">
+     <form method="post" action="">
+         <div class="form-group">
+             <label>NIM</label>
+             <input type="text" name="tnim" class="form-control" placeholder="Masukkan NIM Anda" required>
+         </div>
+         <div class="form-group">
+            <label>Nama</label>
+            <input type="text" name="tnama" class="form-control" placeholder="Masukkan Nama Anda" required>
+        </div>
+        <div class="form-group">
+            <label>Program Studi</label>
+            <select class="form-control" name="tprodi">
+                <option>-</option>
+                <option value="SI">Sistem Informasi</option>
+                <option value="MTK">Matematika</option>
+                <option value="BI">Biologi</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-succes" name="bsave">Save</button>
+        <button type="reset" class="btn btn-danger" name="breset">Reset</button>
+
+     </form>
+    </div>
+  </div>
+<!-- Akhir card form -->
+
+<!-- Awal card tabel -->
+<div class="card mt-4">
+    <div class="card-header bg-succes">
+      Daftar Mahasiswa
+    </div>
+    <div class="card-body">
+
+        <table class="table table-bordered table-striped">
+            <tr>
+                <th>No</th>
+                <th>Nim</th>
+                <th>Nama</th>
+                <th>Tempat,Tanggal Lahir</th>
+                <th>Jenis Kelamin</th>
+                <th>Agama</th>
+                <th>Alamat</th>
+                <th>Telephon</th>
+            </tr>
+            <tr>
+                <td>1</td>                                                    
+                <td>1731200005</td>
+                <td>Rio Rinaldo</td>
+                <td>Metro,16-03-1979</td>
+                <td>Laki-laki</td>
+                <td>Islam</td>
+                <td>Jalan Zaenal Abidin Pagaratam No 1 Bandar Lampung</td>
+                <td>081922919212</td>
+            
+            </tr>
+
+            <tr>
+                <td>2</td>                                                    
+                <td>1731200006</td>
+                <td>Rinaldi</td>
+                <td>Jakarta,16-03-1979</td>
+                <td>Laki-laki</td>
+                <td>Islam</td>
+                <td>Jalan Yos Sudarso No 135 Bandar Lampung</td>
+                <td>081366955767</td>
+            
+            </tr>
+
+            <tr>
+                <td>3</td>                                                    
+                <td>1731200004</td>
+                <td>Ayu Nurlina</td>
+                <td>Jakarta,19-12-1994</td>
+                <td>Perempuan</td>
+                <td>Islam</td>
+                <td>Jalan Radin Intan No 77 Tanjung Karang, Bandar Lampung</td>
+                <td>089977955772</td>
+            
+            </tr>
+
+            <tr>
+                <td>4</td>                                                    
+                <td>1731200003</td>
+                <td>Indra Styowantoro</td>
+                <td>Purbolinggo,15-05-1991</td>
+                <td>Laki-laki</td>
+                <td>Islam</td>
+                <td>Perum Griya Gedung Meneng Bok C2 No 2 Rajabasa, Bandar Lampung</td>
+                <td>085669919769</td>
+            
+            </tr>
+
+            <tr>
+                <td>5</td>                                                    
+                <td>1731200002</td>
+                <td>Iskadina Eka Putri</td>
+                <td>Jakarta,02-05-1993</td>
+                <td>Perempuan</td>
+                <td>Islam</td>
+                <td>Jalan Pagar Alam No 15 Kedaton, Bandar Lampung</td>
+                <td>085769892909</td>
+            
+            </tr>
+        </table>
+
+     
+    </div>
+  </div>
+<!-- Akhir card tabel -->
+
+</div>
+
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </body>
+</html>
